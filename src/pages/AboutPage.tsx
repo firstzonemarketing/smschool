@@ -1,3 +1,4 @@
+import { assetUrl } from '../lib/assetUrl';
 import { Link } from 'react-router-dom';
 import { Award, Compass, Heart, Sparkles, CheckCircle2, ArrowRight, Users } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
@@ -10,7 +11,7 @@ export function AboutPage() {
       <SEOHead
         title="About Us"
         description="Learn about SM English School and the SM Education Society (established in 1965 by late Dr. Nazir Ahmed) in Hoodi, Bangalore — our vision, mission, faculty, and holistic approach."
-        image="/assets/events/event-campus-assembly-blazers.jpg"
+        image={assetUrl('/assets/events/event-campus-assembly-blazers.jpg')}
       />
 
       {/* Editorial Hero Banner */}
@@ -34,7 +35,7 @@ export function AboutPage() {
             <Reveal delay={0.1} className="lg:col-span-5">
               <div className="rounded-[2.25rem] overflow-hidden shadow-editorial border-4 border-white aspect-[4/3]">
                 <img
-                  src="/assets/events/event-campus-assembly-blazers.jpg"
+                  src={assetUrl('/assets/events/event-campus-assembly-blazers.jpg')}
                   alt="Students of SM English School assembled on campus"
                   className="w-full h-full object-cover"
                 />
@@ -168,7 +169,7 @@ export function AboutPage() {
             <Reveal className="lg:col-span-6 grid grid-cols-2 gap-4">
               <div className="rounded-3xl overflow-hidden shadow-editorial aspect-[4/5]">
                 <img
-                  src="/assets/classrooms/classroom-montessori-pink-tower.jpg"
+                  src={assetUrl('/assets/classrooms/classroom-montessori-pink-tower.jpg')}
                   alt="Child working with Montessori Pink Tower"
                   loading="lazy"
                   decoding="async"
@@ -178,7 +179,7 @@ export function AboutPage() {
               <div className="space-y-4 pt-8">
                 <div className="rounded-3xl overflow-hidden shadow-editorial aspect-square">
                   <img
-                    src="/assets/activities/activity-school-garden.jpg"
+                    src={assetUrl('/assets/activities/activity-school-garden.jpg')}
                     alt="Students watering saplings in the SMES school garden"
                     loading="lazy"
                     decoding="async"
@@ -264,7 +265,7 @@ export function AboutPage() {
             <Reveal delay={0.12} className="lg:col-span-5">
               <div className="rounded-[2rem] overflow-hidden border-4 border-white/15 shadow-2xl aspect-[4/3]">
                 <img
-                  src="/assets/classrooms/classroom-botany-lesson.jpg"
+                  src={assetUrl('/assets/classrooms/classroom-botany-lesson.jpg')}
                   alt="Teacher explaining plant science with real specimens at SM English School"
                   loading="lazy"
                   decoding="async"

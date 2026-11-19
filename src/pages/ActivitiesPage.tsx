@@ -1,3 +1,4 @@
+import { assetUrl } from '../lib/assetUrl';
 import { Link } from 'react-router-dom';
 import {
   Calculator,
@@ -26,8 +27,8 @@ const FEATURED_SECTIONS = [
     description:
       'Through our “Mathematical Magic” program, we strive to erase all fears of mathematics from the minds of young learners. By visualizing math through Vedic Maths, Abacus, and Mental Arithmetic, students build rapid calculation ability alongside stronger concentration, memory, and visualization.',
     highlights: ['Vedic Maths', 'Abacus Mental Arithmetic', 'Hands-On Montessori Numeracy'],
-    image: '/assets/classrooms/classroom-abacus-math.jpg',
-    secondaryImage: '/assets/classrooms/classroom-montessori-pegs.jpg',
+    image: assetUrl('/assets/classrooms/classroom-abacus-math.jpg'),
+    secondaryImage: assetUrl('/assets/classrooms/classroom-montessori-pegs.jpg'),
     theme: 'bg-[#FFF1EE] border-[#FED7AA]',
     badge: 'bg-[#F97316] text-white',
     icon: Calculator,
@@ -39,8 +40,8 @@ const FEATURED_SECTIONS = [
     description:
       'We embrace Innovative Learning with creative teaching methods, age-appropriate technology, and hands-on STEM experiments. Programs like Memory Boosters, Think Wide, Personality Development, and Coding inspire students to build websites, solve problems, and think outside the box.',
     highlights: ['STEM & Model Building', 'Web Development & Coding', 'Memory Boosters & Think Wide'],
-    image: '/assets/activities/activity-robotics-model.jpg',
-    secondaryImage: '/assets/facilities/facility-science-lab.jpg',
+    image: assetUrl('/assets/activities/activity-robotics-model.jpg'),
+    secondaryImage: assetUrl('/assets/facilities/facility-science-lab.jpg'),
     theme: 'bg-[#E0F2FE] border-[#BAE6FD]',
     badge: 'bg-[#0284C7] text-white',
     icon: Lightbulb,
@@ -52,8 +53,8 @@ const FEATURED_SECTIONS = [
     description:
       'Structured academic discipline is enhanced with projector-equipped audio-visual rooms, our well-stocked library, and Newspaper-in-Education (NIE) — a leading-publication initiative paired with fortnightly interactions with experts from diverse fields.',
     highlights: ['Audio-Visual Projectors', 'Newspaper-in-Education (NIE)', 'Fortnightly Expert Sessions'],
-    image: '/assets/facilities/facility-av-smartroom.jpg',
-    secondaryImage: '/assets/facilities/facility-library.jpg',
+    image: assetUrl('/assets/facilities/facility-av-smartroom.jpg'),
+    secondaryImage: assetUrl('/assets/facilities/facility-library.jpg'),
     theme: 'bg-[#EDE9FE] border-[#DDD6FE]',
     badge: 'bg-[#8B5CF6] text-white',
     icon: BookOpenCheck,
@@ -65,8 +66,8 @@ const FEATURED_SECTIONS = [
     description:
       'Whether spiking a volleyball, playing throwball, sprinting on our track, practicing yoga asanas (Classes 4 to 10, winning accolades during Dasara and Karnataka Rajyotsava), or training in Karate self-defense under dedicated instructors, students develop strength, perseverance, and sportsmanship.',
     highlights: ['Volleyball, Throwball & Athletics', 'Guided Yoga Wellness', 'Karate & Self-Defense'],
-    image: '/assets/activities/activity-volleyball.jpg',
-    secondaryImage: '/assets/activities/activity-karate-demonstration.jpg',
+    image: assetUrl('/assets/activities/activity-volleyball.jpg'),
+    secondaryImage: assetUrl('/assets/activities/activity-karate-demonstration.jpg'),
     theme: 'bg-[#D1FAE5] border-[#A7F3D0]',
     badge: 'bg-[#10B981] text-white',
     icon: Trophy,
@@ -78,8 +79,8 @@ const FEATURED_SECTIONS = [
     description:
       'Music relieves stress and brings joy to school life, while painting, drawing, clay sculpting, and puppetry spark imagination and refine fine motor skills. Every colourful project builds confidence and joyful self-expression.',
     highlights: ['Painting & Clay Craft', 'Singing & Vocal Music', 'Puppetry & Action Rhymes'],
-    image: '/assets/activities/activity-clay-craft.jpg',
-    secondaryImage: '/assets/activities/activity-rhymes-dance.jpg',
+    image: assetUrl('/assets/activities/activity-clay-craft.jpg'),
+    secondaryImage: assetUrl('/assets/activities/activity-rhymes-dance.jpg'),
     theme: 'bg-[#FEF3C7] border-[#FDE68A]',
     badge: 'bg-[#D97706] text-white',
     icon: Palette,
@@ -91,8 +92,8 @@ const FEATURED_SECTIONS = [
     description:
       'From collaborative science charts and botanical specimens to gardening in our very own school garden and educational field trips, students learn by doing — nurturing environmental responsibility, curiosity, and real-world social skills.',
     highlights: ['School Vegetable Garden', 'Educational Field Trips', 'Collaborative Science Projects'],
-    image: '/assets/activities/activity-school-garden.jpg',
-    secondaryImage: '/assets/classrooms/classroom-poster-teamwork.jpg',
+    image: assetUrl('/assets/activities/activity-school-garden.jpg'),
+    secondaryImage: assetUrl('/assets/classrooms/classroom-poster-teamwork.jpg'),
     theme: 'bg-[#ECFDF5] border-[#A7F3D0]',
     badge: 'bg-[#059669] text-white',
     icon: Sparkles,
@@ -104,8 +105,8 @@ const FEATURED_SECTIONS = [
     description:
       'Every festival and national occasion is celebrated with heart at SMES — from Dussehra and World Environment Day to traditional dances, school band marches, and lively Saturday four-house co-curricular competitions.',
     highlights: ['Festival Celebrations', 'Saturday Four-House Competitions', 'Cultural Exhibitions & Dance'],
-    image: '/assets/events/event-dussehra-celebration.jpg',
-    secondaryImage: '/assets/events/event-national-day-band.jpg',
+    image: assetUrl('/assets/events/event-dussehra-celebration.jpg'),
+    secondaryImage: assetUrl('/assets/events/event-national-day-band.jpg'),
     theme: 'bg-[#FCE7F3] border-[#FBCFE8]',
     badge: 'bg-[#DB2777] text-white',
     icon: PartyPopper,
@@ -127,7 +128,7 @@ export function ActivitiesPage() {
       <SEOHead
         title="Activities & Programs"
         description="Discover SM English School's holistic programs: Mathematical Magic, Abacus, Coding, Yoga, Karate, Sports, Art & Craft, Singing, Gardening, Field Trips, and School Celebrations."
-        image="/assets/activities/activity-volleyball.jpg"
+        image={assetUrl('/assets/activities/activity-volleyball.jpg')}
       />
 
       {/* Hero */}

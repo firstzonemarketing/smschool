@@ -1,4 +1,5 @@
 import { apiRequest } from '../lib/api';
+import { assetUrl } from '../lib/assetUrl';
 import { DEFAULT_GALLERY_CATEGORIES, SEED_GALLERY_IMAGES } from '../data/gallerySeed';
 import type {
   ContactEnquiry,
@@ -70,7 +71,11 @@ export async function fetchPublishedGalleryImages(options?: {
     const qs = params.toString() ? `?${params.toString()}` : '';
 
     const res = await apiRequest<{ data: GalleryImage[] }>(`/api/gallery${qs}`);
-    return { images: res.data ?? [], source: 'laravel' };
+    const mapped = (res.data ?? []).map((img) => ({
+      ...img,
+      image_url: assetUrl(img.image_url),
+    }));
+    return { images: mapped, source: 'laravel' };
   } catch {
     let items = attachSeedCategories(SEED_GALLERY_IMAGES).filter((i) => i.is_published);
     if (options?.featuredOnly) items = items.filter((i) => i.is_featured);
@@ -129,7 +134,10 @@ export async function submitContactEnquiry(payload: {
 
 export async function adminFetchAllImages(): Promise<GalleryImage[]> {
   const res = await apiRequest<{ data: GalleryImage[] }>('/api/admin/gallery', { auth: true });
-  return res.data ?? [];
+  return (res.data ?? []).map((img) => ({
+    ...img,
+    image_url: assetUrl(img.image_url),
+  }));
 }
 
 export async function adminFetchCategories(): Promise<GalleryCategory[]> {

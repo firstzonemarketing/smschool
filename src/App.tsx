@@ -22,7 +22,7 @@ import { AdminSettings } from './pages/admin/AdminSettings';
 export function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           {/* Public Website Routes */}
           <Route element={<PublicLayout />}>

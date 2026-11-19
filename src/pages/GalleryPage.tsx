@@ -1,3 +1,4 @@
+import { assetUrl } from '../lib/assetUrl';
 import { useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Search, ZoomIn, LayoutGrid, Columns3, Images, Loader2 } from 'lucide-react';
@@ -70,7 +71,7 @@ export function GalleryPage() {
       <SEOHead
         title="Event & Campus Gallery"
         description="Browse authentic photographs of SM English School in Hoodi, Bangalore — school events, classroom activities, sports, cultural programs, celebrations, and campus facilities."
-        image="/assets/events/event-morning-assembly-aerial.jpg"
+        image={assetUrl('/assets/events/event-morning-assembly-aerial.jpg')}
       />
 
       {/* Header */}

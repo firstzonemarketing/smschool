@@ -1,3 +1,4 @@
+import { assetUrl } from '../lib/assetUrl';
 import { useSearchParams } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, ExternalLink } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
@@ -14,7 +15,7 @@ export function ContactPage() {
       <SEOHead
         title="Contact & Admissions"
         description="Contact SM English School at Devi Anugraha, Basi Reddy Garden, Hoodi, Bangalore - 560 048. Call +91 7676995557 or email info@smschool.co.in for admissions and general enquiries."
-        image="/assets/students/student-teacher-welcome.jpg"
+        image={assetUrl('/assets/students/student-teacher-welcome.jpg')}
       />
 
       {/* Hero */}
@@ -127,7 +128,7 @@ export function ContactPage() {
             <div className="rounded-[2rem] overflow-hidden border border-slate-200/80 bg-[#0F172A] text-white p-6 space-y-4">
               <div className="rounded-2xl overflow-hidden aspect-[16/9]">
                 <img
-                  src="/assets/students/student-teacher-welcome.jpg"
+                  src={assetUrl('/assets/students/student-teacher-welcome.jpg')}
                   alt="Warm welcome at SM English School Hoodi"
                   loading="lazy"
                   decoding="async"

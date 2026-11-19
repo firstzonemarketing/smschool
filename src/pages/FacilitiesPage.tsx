@@ -1,3 +1,4 @@
+import { assetUrl } from '../lib/assetUrl';
 import { Link } from 'react-router-dom';
 import {
   Bus,
@@ -37,21 +38,21 @@ const CAMPUS_EXTRAS = [
     title: 'Science & Chemistry Laboratories',
     description:
       'Hands-on microscope investigations and guided practical chemistry experiments strengthen conceptual science learning.',
-    image: '/assets/facilities/facility-science-lab.jpg',
+    image: assetUrl('/assets/facilities/facility-science-lab.jpg'),
     icon: Microscope,
   },
   {
     title: 'School Garden & Nature Space',
     description:
       'Students connect with nature by tending crops and saplings right inside our very own school garden.',
-    image: '/assets/activities/activity-school-garden.jpg',
+    image: assetUrl('/assets/activities/activity-school-garden.jpg'),
     icon: Trees,
   },
   {
     title: 'Outdoor Sports Playground',
     description:
       'Dedicated campus ground for volleyball, throwball, athletics, karate demonstrations, and morning assembly.',
-    image: '/assets/activities/activity-volleyball.jpg',
+    image: assetUrl('/assets/activities/activity-volleyball.jpg'),
     icon: Trophy,
   },
 ];
@@ -62,7 +63,7 @@ export function FacilitiesPage() {
       <SEOHead
         title="Campus Facilities"
         description="Explore SM English School's campus facilities in Hoodi, Bangalore: Transportation, CCTV Surveillance, Yoga, Parents Meet, Audio-Visual Classrooms, Library, and Laboratories."
-        image="/assets/facilities/facility-library.jpg"
+        image={assetUrl('/assets/facilities/facility-library.jpg')}
       />
 
       {/* Banner */}

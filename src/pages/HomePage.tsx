@@ -1,3 +1,4 @@
+import { assetUrl } from '../lib/assetUrl';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -84,7 +85,7 @@ export function HomePage() {
       <SEOHead
         title="SM English School | Hoodi, Bangalore — Where Every Child's Journey Begins"
         description="SM English School, Hoodi, Bangalore — founded by SM Education Society (Est. 1965). Blending Montessori warmth and traditional learning for holistic student development."
-        image="/assets/students/students-smiling-group.jpg"
+        image={assetUrl('/assets/students/students-smiling-group.jpg')}
       />
 
       {/* =================================================================== */}
@@ -105,13 +106,13 @@ export function HomePage() {
           className="pointer-events-none absolute bottom-16 left-[42%] w-12 h-12 rounded-full bg-[#38BDF8]/25 hidden lg:block"
         />
         <img
-          src="/assets/decorations/vector-left-2.png"
+          src={assetUrl('/assets/decorations/vector-left-2.png')}
           alt=""
           aria-hidden="true"
           className="pointer-events-none hidden xl:block absolute bottom-10 left-8 w-20 opacity-45 select-none"
         />
         <img
-          src="/assets/decorations/vector-right-2.png"
+          src={assetUrl('/assets/decorations/vector-right-2.png')}
           alt=""
           aria-hidden="true"
           className="pointer-events-none hidden xl:block absolute top-10 right-10 w-24 opacity-45 select-none"
@@ -214,7 +215,7 @@ export function HomePage() {
                 {/* Primary Hero Photograph */}
                 <div className="relative rounded-[2.25rem] overflow-hidden shadow-editorial border-4 border-white bg-slate-100 aspect-[4/3]">
                   <img
-                    src="/assets/students/students-smiling-group.jpg"
+                    src={assetUrl('/assets/students/students-smiling-group.jpg')}
                     alt="Smiling young students at SM English School, Hoodi, Bangalore"
                     fetchPriority="high"
                     className="w-full h-full object-cover"
@@ -239,7 +240,7 @@ export function HomePage() {
                   className="hidden sm:block absolute -top-6 -right-5 w-44 md:w-48 rounded-2xl overflow-hidden border-4 border-white shadow-xl bg-white"
                 >
                   <img
-                    src="/assets/classrooms/classroom-montessori-pegs.jpg"
+                    src={assetUrl('/assets/classrooms/classroom-montessori-pegs.jpg')}
                     alt="Hands-on Montessori numeracy materials at SM English School"
                     className="w-full h-28 object-cover"
                   />
@@ -281,7 +282,7 @@ export function HomePage() {
                 <div className="col-span-7 space-y-4">
                   <div className="rounded-3xl overflow-hidden shadow-editorial aspect-[4/3]">
                     <img
-                      src="/assets/events/event-campus-assembly-blazers.jpg"
+                      src={assetUrl('/assets/events/event-campus-assembly-blazers.jpg')}
                       alt="Students assembled at SM English School campus"
                       loading="lazy"
                       decoding="async"
@@ -301,7 +302,7 @@ export function HomePage() {
                 <div className="col-span-5 space-y-4 pt-6">
                   <div className="rounded-3xl overflow-hidden shadow-editorial aspect-[3/4]">
                     <img
-                      src="/assets/students/student-teacher-welcome.jpg"
+                      src={assetUrl('/assets/students/student-teacher-welcome.jpg')}
                       alt="Teacher welcoming a young child at SM English School"
                       loading="lazy"
                       decoding="async"
@@ -310,7 +311,7 @@ export function HomePage() {
                   </div>
                   <div className="rounded-3xl overflow-hidden shadow-editorial aspect-[4/3]">
                     <img
-                      src="/assets/classrooms/classroom-montessori-reading.jpg"
+                      src={assetUrl('/assets/classrooms/classroom-montessori-reading.jpg')}
                       alt="Children reading picture books in Montessori room"
                       loading="lazy"
                       decoding="async"
@@ -435,7 +436,7 @@ export function HomePage() {
 
               <div className="rounded-3xl overflow-hidden shadow-editorial aspect-[16/10]">
                 <img
-                  src="/assets/classrooms/classroom-globe-discovery.jpg"
+                  src={assetUrl('/assets/classrooms/classroom-globe-discovery.jpg')}
                   alt="Students discovering world geography with a classroom globe"
                   loading="lazy"
                   decoding="async"

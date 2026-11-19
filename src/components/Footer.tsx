@@ -1,14 +1,15 @@
+import { assetUrl } from '../lib/assetUrl';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, ArrowUpRight, Lock } from 'lucide-react';
 import { SCHOOL_INFO } from '../data/schoolData';
 
 const FOOTER_GALLERY_PREVIEW = [
-  { src: '/assets/events/event-morning-assembly-aerial.jpg', alt: 'Morning assembly' },
-  { src: '/assets/classrooms/classroom-montessori-pegs.jpg', alt: 'Montessori numeracy' },
-  { src: '/assets/activities/activity-volleyball.jpg', alt: 'School volleyball' },
-  { src: '/assets/activities/activity-yoga-group.jpg', alt: 'Campus yoga' },
-  { src: '/assets/facilities/facility-library.jpg', alt: 'School library' },
-  { src: '/assets/events/event-house-quiz-wide.jpg', alt: 'Inter-house quiz' },
+  { src: assetUrl('/assets/events/event-morning-assembly-aerial.jpg'), alt: 'Morning assembly' },
+  { src: assetUrl('/assets/classrooms/classroom-montessori-pegs.jpg'), alt: 'Montessori numeracy' },
+  { src: assetUrl('/assets/activities/activity-volleyball.jpg'), alt: 'School volleyball' },
+  { src: assetUrl('/assets/activities/activity-yoga-group.jpg'), alt: 'Campus yoga' },
+  { src: assetUrl('/assets/facilities/facility-library.jpg'), alt: 'School library' },
+  { src: assetUrl('/assets/events/event-house-quiz-wide.jpg'), alt: 'Inter-house quiz' },
 ];
 
 export function Footer() {

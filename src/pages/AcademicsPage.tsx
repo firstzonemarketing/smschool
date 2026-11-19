@@ -1,3 +1,4 @@
+import { assetUrl } from '../lib/assetUrl';
 import { Link } from 'react-router-dom';
 import {
   BookOpen,
@@ -29,25 +30,25 @@ const METHODICAL_HIGHLIGHTS = [
     title: 'Audio-Visual Smart Classrooms',
     description:
       'Projector-equipped audio-visual rooms give students an engaging break from chalk-and-blackboard lessons and bring concepts alive visually.',
-    image: '/assets/facilities/facility-av-smartroom.jpg',
+    image: assetUrl('/assets/facilities/facility-av-smartroom.jpg'),
   },
   {
     title: 'Digitally Designed Mathematics Lab',
     description:
       'Supporting Mathematical Magic, Abacus, and conceptual problem-solving through interactive mathematical learning tools.',
-    image: '/assets/classrooms/classroom-montessori-counting.jpg',
+    image: assetUrl('/assets/classrooms/classroom-montessori-counting.jpg'),
   },
   {
     title: 'Well-Equipped School Library',
     description:
       'Encouraging students to cultivate a love for reading and discover knowledge far beyond their prescribed syllabus.',
-    image: '/assets/facilities/facility-library.jpg',
+    image: assetUrl('/assets/facilities/facility-library.jpg'),
   },
   {
     title: 'Saturday Four-House Competitions & Festivals',
     description:
       'Students grouped into four houses compete joyfully in co-curricular quizzes and events on Saturdays, while celebrating every festival together.',
-    image: '/assets/events/event-house-quiz-wide.jpg',
+    image: assetUrl('/assets/events/event-house-quiz-wide.jpg'),
   },
 ];
 
@@ -65,7 +66,7 @@ export function AcademicsPage() {
       <SEOHead
         title="Academics & Learning"
         description="Explore SM English School's Early Learning Center, Montessori and traditional curriculum, Innovative Learning, Spoken English, and Methodical Study in Hoodi, Bangalore."
-        image="/assets/classrooms/classroom-montessori-reading.jpg"
+        image={assetUrl('/assets/classrooms/classroom-montessori-reading.jpg')}
       />
 
       {/* Header Banner */}
@@ -93,7 +94,7 @@ export function AcademicsPage() {
             <Reveal delay={0.1} className="lg:col-span-5 grid grid-cols-2 gap-4">
               <div className="rounded-3xl overflow-hidden shadow-editorial aspect-[4/5] border-4 border-white">
                 <img
-                  src="/assets/classrooms/classroom-montessori-reading.jpg"
+                  src={assetUrl('/assets/classrooms/classroom-montessori-reading.jpg')}
                   alt="Montessori reading session"
                   className="w-full h-full object-cover"
                 />
@@ -101,14 +102,14 @@ export function AcademicsPage() {
               <div className="space-y-4 pt-6">
                 <div className="rounded-3xl overflow-hidden shadow-editorial aspect-square border-4 border-white">
                   <img
-                    src="/assets/facilities/facility-science-lab.jpg"
+                    src={assetUrl('/assets/facilities/facility-science-lab.jpg')}
                     alt="Science laboratory microscopy"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="rounded-3xl overflow-hidden shadow-editorial aspect-[4/3] border-4 border-white">
                   <img
-                    src="/assets/classrooms/classroom-chalkboard-phonics.jpg"
+                    src={assetUrl('/assets/classrooms/classroom-chalkboard-phonics.jpg')}
                     alt="Interactive language learning at chalkboard"
                     className="w-full h-full object-cover"
                   />
@@ -126,7 +127,7 @@ export function AcademicsPage() {
             <Reveal className="lg:col-span-6">
               <div className="rounded-[2.25rem] overflow-hidden shadow-editorial aspect-[16/11]">
                 <img
-                  src="/assets/classrooms/classroom-montessori-pegs.jpg"
+                  src={assetUrl('/assets/classrooms/classroom-montessori-pegs.jpg')}
                   alt="Early Learning Center Montessori apparatus"
                   loading="lazy"
                   decoding="async"
@@ -206,7 +207,7 @@ export function AcademicsPage() {
               <div className="h-full rounded-[2rem] bg-[#FFFDF7] border border-slate-200/80 overflow-hidden shadow-editorial flex flex-col">
                 <div className="aspect-[16/10] overflow-hidden">
                   <img
-                    src="/assets/classrooms/classroom-poster-teamwork.jpg"
+                    src={assetUrl('/assets/classrooms/classroom-poster-teamwork.jpg')}
                     alt="Creative study teamwork at SM English School"
                     loading="lazy"
                     decoding="async"
@@ -234,7 +235,7 @@ export function AcademicsPage() {
               <div className="h-full rounded-[2rem] bg-[#FFFDF7] border border-slate-200/80 overflow-hidden shadow-editorial flex flex-col">
                 <div className="aspect-[16/10] overflow-hidden">
                   <img
-                    src="/assets/students/student-mic-speaking.jpg"
+                    src={assetUrl('/assets/students/student-mic-speaking.jpg')}
                     alt="Student practicing spoken English on microphone"
                     loading="lazy"
                     decoding="async"

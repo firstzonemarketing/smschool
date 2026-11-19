@@ -1,3 +1,4 @@
+import { assetUrl } from '../lib/assetUrl';
 export const SCHOOL_INFO = {
   name: 'SM English School',
   shortName: 'SMES',
@@ -21,7 +22,7 @@ export const SCHOOL_INFO = {
     'https://www.google.com/maps?q=SM+English+School+Devi+Anugraha+Basi+Reddy+Garden+Hoodi+Bangalore+560048&output=embed',
   mapDirectionsUrl:
     'https://www.google.com/maps/search/?api=1&query=SM+English+School+Devi+Anugraha+Basi+Reddy+Garden+Hoodi+Bangalore+560048',
-  logo: '/assets/logo/sm-school-logo.png',
+  logo: assetUrl('/assets/logo/sm-school-logo.png'),
 };
 
 export const WHY_CHOOSE_ITEMS = [
@@ -31,7 +32,7 @@ export const WHY_CHOOSE_ITEMS = [
     description:
       'Established in 1965, the SM Education Society has been a pioneer in the field of education for over five decades.',
     accent: 'sky',
-    image: '/assets/events/event-campus-assembly-blazers.jpg',
+    image: assetUrl('/assets/events/event-campus-assembly-blazers.jpg'),
   },
   {
     title: 'Collaborations',
@@ -39,7 +40,7 @@ export const WHY_CHOOSE_ITEMS = [
     description:
       'SM School collaborates with various experts across different fields to ensure that students have a creative and enriching learning experience.',
     accent: 'coral',
-    image: '/assets/activities/activity-robotics-model.jpg',
+    image: assetUrl('/assets/activities/activity-robotics-model.jpg'),
   },
   {
     title: 'Individual Attention',
@@ -47,7 +48,7 @@ export const WHY_CHOOSE_ITEMS = [
     description:
       'At SM School, we prioritize individual attention, ensuring that each student receives the support and guidance they need to thrive in their learning journey.',
     accent: 'fresh',
-    image: '/assets/students/student-teacher-welcome.jpg',
+    image: assetUrl('/assets/students/student-teacher-welcome.jpg'),
   },
 ] as const;
 
@@ -132,7 +133,7 @@ export const FACILITIES_LIST = [
     shortDesc: 'Reliable school transportation facility is available for students commuting to our Hoodi campus.',
     fullDesc:
       'Transportation facility is available to support safe, punctual, and convenient daily commutes for students traveling between home and our Hoodi campus.',
-    image: '/assets/events/event-campus-assembly-blazers.jpg',
+    image: assetUrl('/assets/events/event-campus-assembly-blazers.jpg'),
     color: 'sunshine',
     icon: 'Bus',
   },
@@ -142,7 +143,7 @@ export const FACILITIES_LIST = [
     shortDesc: 'Cameras have been installed across campus to monitor school activities and support a safe environment.',
     fullDesc:
       'CCTV cameras have been installed across the school premises to monitor campus activities and maintain a secure, well-supervised environment for every child.',
-    image: '/assets/facilities/facility-campus-corridor.jpg',
+    image: assetUrl('/assets/facilities/facility-campus-corridor.jpg'),
     color: 'sky',
     icon: 'ShieldCheck',
   },
@@ -152,7 +153,7 @@ export const FACILITIES_LIST = [
     shortDesc: 'Yoga plays a vital role in the physical and mental growth of a child, guided by trained experts.',
     fullDesc:
       'Yoga plays a vital role in the physical and mental growth of a child. Classes for students in Classes 4 to 10 are handled by trained experts, with students also winning accolades in Dasara and Karnataka Rajyotsava competitions.',
-    image: '/assets/activities/activity-yoga-group.jpg',
+    image: assetUrl('/assets/activities/activity-yoga-group.jpg'),
     color: 'fresh',
     icon: 'HeartHandshake',
   },
@@ -162,7 +163,7 @@ export const FACILITIES_LIST = [
     shortDesc: 'Parents are encouraged to participate in their ward’s development and offer valuable suggestions.',
     fullDesc:
       'We believe strong parent-teacher collaboration builds confident learners. Through regular Parents Meets, parents actively participate in their ward’s development and contribute suggestions towards continuous school improvement.',
-    image: '/assets/students/student-teacher-welcome.jpg',
+    image: assetUrl('/assets/students/student-teacher-welcome.jpg'),
     color: 'coral',
     icon: 'Users',
   },
@@ -172,7 +173,7 @@ export const FACILITIES_LIST = [
     shortDesc: 'Projector-equipped audiovisual rooms and tactile Montessori spaces that make learning vivid and engaging.',
     fullDesc:
       'Alongside bright, child-friendly classrooms and an international-standard Montessori Early Learning Center, SMES features audio-visual rooms equipped with projectors that bring methodical study beyond traditional chalk-and-blackboard methods.',
-    image: '/assets/facilities/facility-av-smartroom.jpg',
+    image: assetUrl('/assets/facilities/facility-av-smartroom.jpg'),
     color: 'lavender',
     icon: 'MonitorPlay',
   },
@@ -182,7 +183,7 @@ export const FACILITIES_LIST = [
     shortDesc: 'Well-equipped library, digitally designed mathematics lab, science lab, playground, and school garden.',
     fullDesc:
       'Students benefit from a well-equipped library that nurtures a love for reading beyond the syllabus, a digitally designed mathematics laboratory, practical science labs with microscopes, a spacious sports ground, and our very own school garden.',
-    image: '/assets/facilities/facility-library.jpg',
+    image: assetUrl('/assets/facilities/facility-library.jpg'),
     color: 'sky',
     icon: 'BookOpen',
   },
@@ -197,7 +198,7 @@ export const CREATIVE_CLASSES = [
       'Through our “Mathematical Magic” program, we make math fun and engaging, helping to erase any fears young children may have about the subject. Using interactive activities and real-world applications, we prepare them for the school years ahead with confidence, curiosity, and a love for learning.',
     detail:
       'Students visualize math through Vedic Maths, Abacus, and Mental Arithmetic — reducing fear and burden while strengthening concentration, memory, and visualization skills.',
-    image: '/assets/classrooms/classroom-montessori-pegs.jpg',
+    image: assetUrl('/assets/classrooms/classroom-montessori-pegs.jpg'),
     color: 'coral',
   },
   {
@@ -208,7 +209,7 @@ export const CREATIVE_CLASSES = [
       'We embrace Innovative Learning by incorporating creative teaching methods, modern technology, and hands-on experiences. Our approach encourages critical thinking, problem solving, and collaboration — inspiring students to explore, experiment, and think outside the box.',
     detail:
       'Includes Memory Boosters, Think Wide, Personality Development, and Spoken English classes conducted by qualified guest faculty to build lifelong confidence.',
-    image: '/assets/activities/activity-robotics-model.jpg',
+    image: assetUrl('/assets/activities/activity-robotics-model.jpg'),
     color: 'sky',
   },
   {
@@ -219,7 +220,7 @@ export const CREATIVE_CLASSES = [
       'We emphasize Methodical Study, encouraging students to approach learning with structure and discipline. Classrooms are supported by audiovisual rooms featuring projectors, offering an engaging blend of structured learning and interactive technology.',
     detail:
       'Reinforced by our digitally designed Mathematics Laboratory, well-equipped library, regular assessments, and Saturday co-curricular competitions across four school houses.',
-    image: '/assets/facilities/facility-av-smartroom.jpg',
+    image: assetUrl('/assets/facilities/facility-av-smartroom.jpg'),
     color: 'lavender',
   },
 ] as const;
@@ -231,7 +232,7 @@ export const ACTIVITIES_PROGRAMS = [
     category: 'Numeracy & Logic',
     description:
       'Erasing fears of mathematics through Vedic Maths, Abacus, and Mental Arithmetic. Students learn to solve complex calculations with ease while strengthening memory, concentration, and visualization.',
-    image: '/assets/classrooms/classroom-abacus-math.jpg',
+    image: assetUrl('/assets/classrooms/classroom-abacus-math.jpg'),
     accent: 'coral',
   },
   {
@@ -240,7 +241,7 @@ export const ACTIVITIES_PROGRAMS = [
     category: 'Cognitive Growth',
     description:
       'Memory Boosters, Think Wide, and Personality Development programs crafted to bring out every child’s best — cultivating mental agility, confidence, and a positive attitude toward life’s challenges.',
-    image: '/assets/classrooms/classroom-poster-teamwork.jpg',
+    image: assetUrl('/assets/classrooms/classroom-poster-teamwork.jpg'),
     accent: 'lavender',
   },
   {
@@ -249,7 +250,7 @@ export const ACTIVITIES_PROGRAMS = [
     category: 'Athletics & Teamwork',
     description:
       'Whether spiking a volleyball, playing throwball, sprinting on the track, or practicing hula-hoop coordination, students build physical strength, leadership, perseverance, and lasting friendships on our school ground.',
-    image: '/assets/activities/activity-volleyball.jpg',
+    image: assetUrl('/assets/activities/activity-volleyball.jpg'),
     accent: 'fresh',
   },
   {
@@ -258,7 +259,7 @@ export const ACTIVITIES_PROGRAMS = [
     category: 'Mind & Body Fitness',
     description:
       'Guided yoga for Classes 4 to 10 (with students earning accolades during Dasara and Karnataka Rajyotsava) alongside karate training under dedicated instructors for integral fitness and self-defense.',
-    image: '/assets/activities/activity-karate-group.jpg',
+    image: assetUrl('/assets/activities/activity-karate-group.jpg'),
     accent: 'sky',
   },
   {
@@ -267,7 +268,7 @@ export const ACTIVITIES_PROGRAMS = [
     category: 'Digital & Global Awareness',
     description:
       'Inspiring young minds to build websites through logical reasoning and web development, paired with Newspaper-in-Education (NIE) and fortnightly interactions with experts from diverse fields.',
-    image: '/assets/facilities/facility-science-lab.jpg',
+    image: assetUrl('/assets/facilities/facility-science-lab.jpg'),
     accent: 'sunshine',
   },
   {
@@ -276,7 +277,7 @@ export const ACTIVITIES_PROGRAMS = [
     category: 'Creative Expression',
     description:
       'Painting, drawing, clay sculpting, puppetry, and vocal music nurture imagination, fine motor skills, stage confidence, and joyful self-expression across every grade.',
-    image: '/assets/activities/activity-clay-craft.jpg',
+    image: assetUrl('/assets/activities/activity-clay-craft.jpg'),
     accent: 'coral',
   },
   {
@@ -285,7 +286,7 @@ export const ACTIVITIES_PROGRAMS = [
     category: 'Nature & Exploration',
     description:
       'Garden-based learning in our very own school garden connects children with nature and responsibility, while curated field trips provide real-world hands-on discovery outside the classroom.',
-    image: '/assets/activities/activity-school-garden.jpg',
+    image: assetUrl('/assets/activities/activity-school-garden.jpg'),
     accent: 'fresh',
   },
   {
@@ -294,7 +295,7 @@ export const ACTIVITIES_PROGRAMS = [
     category: 'Unity & Tradition',
     description:
       'Every festival and national occasion is celebrated with warmth at SMES — from Dussehra and World Environment Day to traditional dances, cultural exhibitions, and Saturday four-house competitions.',
-    image: '/assets/events/event-dussehra-celebration.jpg',
+    image: assetUrl('/assets/events/event-dussehra-celebration.jpg'),
     accent: 'lavender',
   },
 ] as const;
@@ -305,27 +306,27 @@ export const DAY_IN_LIFE_STEPS = [
     title: 'Reflection & Gratitude',
     description:
       'Every day at SMES begins together on the courtyard with a peaceful moment of reflection and gratitude, thanking the Almighty for new opportunities to learn and grow.',
-    image: '/assets/events/event-morning-prayer-1.jpg',
+    image: assetUrl('/assets/events/event-morning-prayer-1.jpg'),
   },
   {
     time: 'Core Learning',
     title: 'Enriching Classroom Discovery',
     description:
       'Across 7 structured 45-minute periods (9:00 AM to 3:15 PM), students dive into academics, Montessori apparatus, audio-visual sessions, and hands-on lab inquiry.',
-    image: '/assets/classrooms/classroom-montessori-counting.jpg',
+    image: assetUrl('/assets/classrooms/classroom-montessori-counting.jpg'),
   },
   {
     time: 'Active Growth',
     title: 'Sports, Arts & Friendships',
     description:
       'Breaks, sports ground matches, yoga, karate, singing, and collaborative clubs foster community, physical vitality, and joy beyond textbooks.',
-    image: '/assets/activities/activity-throwball.jpg',
+    image: assetUrl('/assets/activities/activity-throwball.jpg'),
   },
   {
     time: 'Closing Moment',
     title: 'Gratitude & Tomorrow’s Promise',
     description:
       'As the day draws to a close, students reflect on their learning, express gratitude once again, and head home ready for tomorrow’s discoveries.',
-    image: '/assets/students/students-smiling-group.jpg',
+    image: assetUrl('/assets/students/students-smiling-group.jpg'),
   },
 ] as const;
