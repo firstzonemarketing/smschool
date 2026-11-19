@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: sm-english-school
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /up
+    envVars:
+      - key: APP_NAME
+        value: "SM English School"
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: DB_CONNECTION
+        value: sqlite
+      - key: ADMIN_EMAIL
+        value: admin@smschool.co.in
+      - key: ADMIN_PASSWORD
+        generateValue: true

@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Fredoka', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  --color-sky-brand: #0284C7;
+  --color-sky-soft: #38BDF8;
+  --color-sky-tint: #E0F2FE;
+
+  --color-sunshine: #FACC15;
+  --color-sunshine-soft: #FEF3C7;
+
+  --color-coral: #F97316;
+  --color-coral-rose: #FB7185;
+  --color-coral-tint: #FFF1EE;
+
+  --color-fresh: #10B981;
+  --color-fresh-soft: #D1FAE5;
+
+  --color-lavender: #8B5CF6;
+  --color-lavender-soft: #EDE9FE;
+
+  --color-warm-white: #FFFDF7;
+  --color-warm-cream: #FAF6ED;
+  --color-navy: #0F172A;
+  --color-navy-soft: #1E293B;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: var(--color-warm-white);
+    color: var(--color-navy);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+  }
+
+  /* Accessible focus ring */
+  :focus-visible {
+    outline: 3px solid #0284C7;
+    outline-offset: 2px;
+  }
+}
+
+/* Editorial soft shadows & decorative patterns */
+.shadow-editorial {
+  box-shadow: 0 20px 50px -20px rgba(15, 23, 42, 0.12), 0 4px 12px -4px rgba(15, 23, 42, 0.05);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 28px 60px -22px rgba(2, 132, 199, 0.18), 0 8px 20px -6px rgba(15, 23, 42, 0.06);
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(15, 23, 42, 0.08) 1.25px, transparent 1.25px);
+  background-size: 24px 24px;
+}
+
+.bg-warm-mesh {
+  background:
+    radial-gradient(at 10% 15%, rgba(56, 189, 248, 0.16) 0px, transparent 48%),
+    radial-gradient(at 88% 12%, rgba(250, 204, 21, 0.18) 0px, transparent 46%),
+    radial-gradient(at 78% 84%, rgba(167, 139, 250, 0.14) 0px, transparent 46%),
+    radial-gradient(at 15% 88%, rgba(52, 211, 153, 0.12) 0px, transparent 45%),
+    #FFFDF7;
+}
+
+/* Masonry grid helpers */
+.masonry-columns {
+  column-count: 1;
+  column-gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .masonry-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-columns {
+    column-count: 3;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1.25rem;
+}

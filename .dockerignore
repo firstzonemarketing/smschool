@@ -1,0 +1,9 @@
+node_modules
+dist
+.git
+.env
+.env.local
+backend/vendor
+backend/.env
+backend/database/*.sqlite
+backend/storage/logs/*
